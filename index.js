@@ -12,7 +12,7 @@ async function main() {
   client.release();
   pool.end();
 }
-
+//Function to add tableware
 // async function createTableware(name, qty) {
 //   await pool.query("INSERT INTO tableware(name, qty) VALUES ($1, $2)", [
 //     name,
@@ -27,4 +27,17 @@ async function readAllTableware() {
   console.log(res.rows);
 }
 readAllTableware();
+//Function to add offices
+// async function addOffice(name, location, starting_year) {
+//   await pool.query(
+//     "INSERT INTO office(name, location, starting_year)VALUES ($1, $2, $3)",
+//     [name, location, starting_year]
+//   );
+//   return;
+// }
+// addOffice("Academy Germany", "Munchen", 2018);
+
+// async function updateTableware(id){
+//   await pool.query("UPDATE tableware set ")
+// }
 main();
